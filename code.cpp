@@ -53,7 +53,7 @@ void addStudentFromFile()
 
 void addNewStudent(int id, string name, float cgpa)
 {
-    // Check if same ID exists
+    // Check if the same ID exists
     node *temp = head;
     while (temp != NULL)
     {
@@ -65,7 +65,7 @@ void addNewStudent(int id, string name, float cgpa)
         temp = temp->link;
     }
 
-    // Memory allocation for new student
+    // Memory allocation for a new student
     node *newnode = new node;
     newnode->id = id;
     newnode->name = name;
